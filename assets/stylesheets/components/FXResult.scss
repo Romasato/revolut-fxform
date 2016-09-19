@@ -1,0 +1,39 @@
+.fxResult {
+  background: #55A3DE;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+
+  p {
+    margin: 5px;
+  }
+
+  .fxResult__rate,
+  .fxResult__crc {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .btn {
+    background: $colorBgCrcBlock2;
+    color: white;
+    width: 50%;
+    font-size: 1.4em;
+    height: 2em;
+    margin-top: 20px;
+
+    background: #f423d3;
+    background: -moz-linear-gradient(45deg, #f423d3 0%, #a53dd5 26%, #5d47cc 52%, #2f5cce 77%, #1f6ac3 100%);
+    background: -webkit-linear-gradient(45deg, #f423d3 0%,#a53dd5 26%,#5d47cc 52%,#2f5cce 77%,#1f6ac3 100%);
+    background: linear-gradient(45deg, #f423d3 0%,#a53dd5 26%,#5d47cc 52%,#2f5cce 77%,#1f6ac3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f423d3', endColorstr='#1f6ac3',GradientType=1 );
+
+    &:focus:active {
+      color: white;
+      background: lighten($colorBgCrcBlock2, 10%);
+    }
+  }
+
+
+}

@@ -1,0 +1,114 @@
+.fxForm {
+  color: white;
+  margin: 0 -15px;
+
+  .fxForm__crcA {
+    margin-top: 10px;
+    background: $colorBgCrcBlock1;
+  }
+
+  .fxForm__crc {
+    font-size: 1.1em;
+    padding: 15px;
+  }
+
+
+  .fxForm__crcB {
+    padding-top: 20px;
+    background: $colorBgCrcBlock2;
+
+    .fxForm__crcAmount input.form-control
+    {
+      border: 1px solid rgb(0, 137, 233);
+    }
+  }
+
+  .fxForm__crcName
+  {
+    font-size: 2.6em;
+  }
+
+  .fxForm__crcAmount
+  {
+    input.form-control {
+      background: none;
+      float: right;
+      color: white;
+      font-size: 40px;
+      height: 60px;
+
+      outline: none;
+      border-radius: 4px;
+      border: 1px solid rgb(0, 108, 184);
+      -webkit-background-clip: padding-box; /* for Safari */
+      background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+      $colorPlaceholder: #FFFFFF;
+
+      &::-webkit-input-placeholder {
+        color: $colorPlaceholder;
+      }
+
+      &:-moz-placeholder { /* Firefox 18- */
+        color: $colorPlaceholder;
+      }
+
+      &::-moz-placeholder {  /* Firefox 19+ */
+        color: $colorPlaceholder;
+      }
+
+      &:-ms-input-placeholder {
+        color: $colorPlaceholder;
+      }
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+    }
+  }
+
+  .fxForm__crcBalanceRow {
+    padding: 10px 0;
+  }
+
+  .fxForm__crcBalance {
+    font-size: 1em;
+  }
+
+  .fxForm__crcRate {
+    font-size: 1em;
+  }
+
+  .fxForm__btnConvert {
+    background: $colorBgCrcBlock2;
+    color: white;
+    width: 50%;
+    font-size: 1.4em;
+    height: 2em;
+    margin: 20px auto;
+
+    background: #f423d3;
+    background: -moz-linear-gradient(45deg, #f423d3 0%, #a53dd5 26%, #5d47cc 52%, #2f5cce 77%, #1f6ac3 100%);
+    background: -webkit-linear-gradient(45deg, #f423d3 0%,#a53dd5 26%,#5d47cc 52%,#2f5cce 77%,#1f6ac3 100%);
+    background: linear-gradient(45deg, #f423d3 0%,#a53dd5 26%,#5d47cc 52%,#2f5cce 77%,#1f6ac3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f423d3', endColorstr='#1f6ac3',GradientType=1 );
+
+    &:focus:active {
+      color: white;
+      background: lighten($colorBgCrcBlock2, 10%);
+    }
+
+    &--disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+  }
+
+
+}
+

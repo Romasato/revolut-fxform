@@ -1,0 +1,20 @@
+
+.loadState {
+  margin: 50px 0;
+
+  .loadMsg {
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    margin: auto;
+  }
+
+  .spinner {
+    img {
+      display: block;
+      margin: auto;
+      width: 90px;
+    }
+  }
+}
+
