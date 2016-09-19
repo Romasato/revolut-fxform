@@ -1,9 +1,10 @@
 # Revolut Currency Exchange Form - Web Version
 
-Requirements:
+Basic requirements:
 
-* Browsers: IE9+, Chrome, Firefox
+* Browsers: built do support IE9+, Chrome, Firefox
 * Node: v0.12+
+* npm 2.15+
 
 ## Technologies used
 
@@ -53,5 +54,5 @@ webpack.config.dev.js   --> Webpack configuration (for development)
 
 ## Notes
 
-* 
-* Unit tests: yep, would be good at least for some of the server-side methods
+* No unit tests yet: would be good at least for some of the server-side methods
+
