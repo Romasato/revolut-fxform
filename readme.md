@@ -1,8 +1,16 @@
 # Revolut Currency Exchange Form - Web Version
 
-Basic requirements:
+This is a demo currency exchange form similar in the look to what can be found in the mobile Revolut app. It is  based on `Node.js`+`Express` server-side and `React.js` + `Reflux` on the front-end. `webpack` with `babel` is used to transpile (ES6/7 -> ES5) and compress code before delivery to the client (browser). 
 
-* Browsers: built do support IE9+, Chrome, Firefox
+The whole idea was to set up project in a way that would be suitable for single-page app (SPA) development. It would probably be an overkill if we needed just a single fx form on a more traditional website with multiple separate pages. But even then - the use of React.js and Reflux would not be totally out of question, but the lib and page weight whould be taken into consideration. Please note that JS file size does reduce dramatically when compressed (`npm build` for production delivery) and is returned gzipped by the supported browsers (all modern ones at this point) and servers, which this implementation of server-side has enabled too.
+ 
+ * Basic configuration settings are managed via `/config/config.js`.
+ * Server-side API is set up on `/api/fx/<endpoint>`, i.e. `/api/fx/rates`, `/api/fx/exchange`
+ * Given it is a demo, some things were left out such as user balance updates after conversion etc. and many things could be polished further to perfection.
+
+Technology requirements:
+
+* Browsers: built to support IE9+, Chrome, Firefox
 * Node: v0.12+
 * npm 2.15+
 
@@ -11,7 +19,8 @@ Basic requirements:
 Tech                | Where in the app? | Desc
 --------------------|-------------------|-------------------------
 Twitter Bootstrap   | Client            | CSS grid system and UI controls - http://getbootstrap.com/
-React.js            | Client            | For building reactive interfaces
+React.js            | Client            | For building reactive interfaces - https://facebook.github.io/react/
+Reflux              | Client            | Data flow between components - https://github.com/reflux/refluxjs
 jQuery              | Client            | For lazy-man's AJAX in this app
 Node.js             | Server            | Just because it is good ol' Javascript on server-side
 Express             | Server            | API and serving static assets (https://expressjs.com/)
