@@ -2,6 +2,8 @@
 
 This is a demo currency exchange form similar in the look to what can be found in the mobile Revolut app. It is  based on `Node.js`+`Express` server-side and `React.js` + `Reflux` on the front-end. `webpack` with `babel` is used to transpile (ES6/7 -> ES5) and compress code before delivery to the client (browser). 
 
+![App screenshot](/work_files/screenshots/to/revolut-fxform.jpg?raw=true "The app as seen in Chrome")
+
 The whole idea was to set up project in a way that would be suitable for single-page app (SPA) development. It would probably be an overkill if we needed just a single fx form on a more traditional website with multiple separate pages. But even then - the use of React.js and Reflux would not be totally out of question, but the lib and page weight whould be taken into consideration. Please note that JS file size does reduce dramatically when compressed (`npm build` for production delivery) and is returned gzipped by the supported browsers (all modern ones at this point) and servers, which this implementation of server-side has enabled too.
  
  * Basic configuration settings are managed via `/config/config.js`.
