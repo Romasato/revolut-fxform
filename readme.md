@@ -51,15 +51,17 @@ webpack.config.dev.js   --> Webpack configuration (for development)
 
 ## Build steps - production
 
-1. `export NODE_ENV=production`
-2. `npm start`
-3. Point your browser to `http://localhost:80/` (or whichever port is configured for production)
+1. `npm install`
+2. `export NODE_ENV=production`
+3. `npm start`
+4. Point your browser to `http://localhost:80/` (or whichever port is configured for production)
 
 ## While developing
 
-1. `npm run build` - to copy assets etc. from `/assets` to `/public`
-2. `npm run debug` - and it will start the app and watch for file changes to reload the app.
-3. Point your browser to `http://localhost:3002/` (or whichever port is configured for development)
+1. `npm install`
+2. `npm run build` - to copy assets etc. from `/assets` to `/public`
+3. `npm run debug` - and it will start the app and watch for file changes to reload the app.
+4. Point your browser to `http://localhost:3002/` (or whichever port is configured for development)
 
 ## Notes
 
