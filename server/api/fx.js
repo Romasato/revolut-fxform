@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
-var http = require('http');
+var https = require('https');
 var libxml = require('libxmljs');
 var _ = require('lodash');
 var memcache = require('memory-cache');
@@ -31,7 +31,7 @@ function fxAPI(config)
     {
         var qDeff = Q.defer();
 
-        http.get(sURL, function(res)
+        https.get(sURL, function(res)
         {
             var body = '';
             res.on('data', function(d)

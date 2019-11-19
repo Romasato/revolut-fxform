@@ -1,6 +1,6 @@
 var config = {
     env:            'dev',
-    ratesSourceURL: 'http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml',
+    ratesSourceURL: 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml',
     ratesCacheTime: 30 * 1000 // How long to cache downloaded XML rates server-side
 };
 
